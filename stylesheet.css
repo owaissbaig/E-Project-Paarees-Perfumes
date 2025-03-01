@@ -1,0 +1,125 @@
+.navbar-nav .nav-link {
+    position: relative;
+    padding: 10px 15px;
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
+    transform: scale(1.1); 
+    color: #f0f0f0; 
+}
+
+.navbar-nav .nav-link:active {
+    transform: scale(0.95);
+}
+
+.dropdown-menu .dropdown-item {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus {
+    background-color: #f0f0f0;
+    transform: translateX(10px); 
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar.scrolled {
+    background-color: rgba(0, 0, 0, 0.8); 
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+body {
+    padding-top: 70px; /* Fix for navbar overlap */
+}
+
+.dropdown-menu-end {
+    right: 0;
+    left: auto;
+}
+
+.carousel-inner {
+    width: 100%;
+    height: 70vh; 
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #000; 
+}
+
+.carousel-caption h5 {
+    font-size: 2.5rem; 
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+}
+
+.text-primary-emphasis {
+    color: #007bff; 
+    font-weight: bold;
+}
+
+.lead {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.container {
+    max-width: 1140px;
+}
+
+@media (max-width: 768px) {
+    .col-lg-6 {
+        margin-bottom: 30px;
+    }
+}
+
+.location-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.location-box:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
+    transform: scale(1.05); 
+}
+
+.location-box:hover {
+    background-color: #f8f9fa; 
+}
+ /* Full-screen video background */
+ .video-background-container {
+    position: relative;
+    width: 100%;
+    height: 500px; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+.video-background {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text content styles */
+.video-content {
+    z-index: 2;
+}
+
+.video-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.video-content p {
+    font-size: 1.5rem;
+    font-style: italic;
+}
