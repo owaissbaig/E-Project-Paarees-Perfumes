@@ -24,6 +24,7 @@
 .navbar-brand{
     font-family: "Dancing Script", cursive;
     font-weight: bolder;
+    font-size: x-large;
 }
 
 .navbar {
@@ -339,3 +340,7 @@ body {
     transform: translateY(0);
     opacity: 1;
 }
+html{
+    behavior:smooth;
+}
+
