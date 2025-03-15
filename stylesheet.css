@@ -21,7 +21,8 @@
     background-color: #574c4c00;
     transform: translateX(10px); 
 }
-.navbar-brand{
+
+.navbar-brand {
     font-family: "Dancing Script", cursive;
     font-weight: bolder;
     font-size: x-large;
@@ -95,40 +96,10 @@ body {
 .location-box:hover {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
     transform: scale(1.05); 
-}
-
-.location-box:hover {
     background-color: #f8f9fa; 
 }
- /* Full-screen video background */
- .video-background-container {
-    position: relative;
-    width: 100%;
-    height: 500px; /* Adjust height as needed */
-    overflow: hidden;
-}
 
-.video-background {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-/* Text content styles */
-.video-content {
-    z-index: 2;
-}
-
-.video-content h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.video-content p {
-    font-size: 1.5rem;
-    font-style: italic;
-}
-/* Ensure the video covers the full page */
+/* Full-screen video background */
 .video-background-container {
     position: relative;
     width: 100%;
@@ -142,8 +113,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the video covers the entire screen */
-    z-index: -1; /* Makes sure the video stays behind text */
+    object-fit: cover; 
+    z-index: -1; /* Keeps the video behind text */
 }
 
 .video-overlay {
@@ -157,146 +128,55 @@ body {
 }
 
 .video-overlay h1 {
-    font-size: 3em; /* Customize the size */
-    margin-bottom: 20px;
-}
-
-.video-overlay p {
-    font-size: 1.5em; /* Customize the size */
-    margin-top: 0;
-}
-.card-img-top {
-    height: 250px; /* Set a fixed height for all images */
-    object-fit: contain; /* Ensure the image doesn't stretch */
-    transition: transform 0.3s ease-in-out; /* Smooth transition for the hover effect */
-}
-
-.card-img-top:hover {
-    transform: scale(1.1); /* Scale the image to 110% of its original size */
-}
-
-/* Image hover effect */
-.card-img-top {
-    height: 250px; /* Set a fixed height for all images */
-    object-fit: contain; /* Ensure the image doesn't stretch */
-    transition: transform 0.3s ease-in-out; /* Smooth transition for the hover effect */
-}
-
-.card-img-top:hover {
-    transform: scale(1.1); /* Scale the image to 110% of its original size */
-}
-
-/* Optional: Styling for the card body */
-.card-body {
-    padding: 15px;
-}
-
-/* Additional styles for better visual presentation */
-.video-background-container {
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
-}
-
-.video-background {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.video-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-}
-
-.video-overlay h1 {
     font-size: 3rem;
     font-weight: bold;
 }
 
 .video-overlay p {
+    font-size: 1.5rem;
     font-style: italic;
-    font-size: 1.2rem;
-}
-/* Ensure the video containers fill the viewport */
-.video-background-container {
-    position: relative;
-    width: 100%;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden;
 }
 
-/* Make the video cover the entire container */
-.video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Make sure video covers the full container */
-    z-index: -1; /* Ensure the video stays behind the text */
+.card-img-top {
+    height: 250px; /* Fixed height for images */
+    object-fit: contain; 
+    transition: transform 0.3s ease-in-out;
 }
 
-/* Center the text overlay and style it */
-.video-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    z-index: 1;
-    font-family: 'Montserrat', sans-serif;
+.card-img-top:hover {
+    transform: scale(1.1); /* Hover scale effect */
 }
 
-/* Style the heading */
-.video-overlay h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 6vw; /* Responsive size based on viewport width */
-    margin: 0;
-    font-weight: 700;
-}
-
-/* Style the paragraph */
-.video-overlay p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2rem;
-    font-style: italic;
+.card-body {
+    padding: 15px;
 }
 
 /* Modal Custom Styling */
 .modal-dialog {
-    max-width: 500px; /* Smaller max-width for the modal */
+    max-width: 500px; 
     margin: 30px auto;
 }
 
 .modal-content {
-    border-radius: 8px; /* Reduced border radius */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
 
-/* Modal Header Styling */
 .modal-header {
     background-color: #007bff;
     color: white;
     padding: 1rem;
-    border-bottom: 1px solid #ddd; /* Lighter border */
+    border-bottom: 1px solid #ddd; 
 }
 
 .modal-header h5 {
     margin: 0;
 }
 
-/* Modal Body Styling */
 .modal-body {
     padding: 1.5rem;
 }
 
-/* Form Input & Textarea Styling */
 .form-control {
     border-radius: 6px;
     padding: 0.8rem;
@@ -309,7 +189,6 @@ body {
     box-shadow: 0 0 3px rgba(0, 123, 255, 0.3);
 }
 
-/* Submit Button Styling */
 .btn-primary {
     background-color: #007bff;
     border: none;
@@ -323,13 +202,11 @@ body {
     background-color: #0056b3;
 }
 
-/* Close Button Styling */
 .btn-close {
     font-size: 1.25rem;
     color: #fff;
 }
 
-/* Animation for Modal */
 .fade .modal-dialog {
     transform: translateY(-20px);
     opacity: 0;
@@ -340,7 +217,36 @@ body {
     transform: translateY(0);
     opacity: 1;
 }
-html{
-    behavior:smooth;
+
+html {
+    behavior: smooth;
 }
 
+/* Media query for mobile screens */
+@media (max-width: 767px) {
+    #aboutus .row {
+        flex-direction: column-reverse;
+    }
+
+    #aboutus .col-lg-6 {
+        width: 100%;
+    }
+
+    #aboutus .col-lg-6.text-center {
+        margin-bottom: 20px;
+    }
+
+    #aboutus .larger-img {
+        width: 80%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+/* Large Screen Image Size */
+@media (min-width: 768px) {
+    #aboutus .larger-img {
+        width: 90%;
+        max-width: 600px;
+    }
+}
