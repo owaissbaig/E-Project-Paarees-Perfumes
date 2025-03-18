@@ -1,140 +1,71 @@
-.navbar-nav .nav-link {
-    position: relative;
-    padding: 10px 15px;
-    transition: transform 0.3s ease, color 0.3s ease; 
+
+/* 
+
+Colors: 
+#2ec4b6
+#ff9f1c
+light: #cbf3f0
+light2: #ffbf69
+
+*/
+
+h1,h2,h3,h4,h5,h6{
+    color: #ff9f1c !important;
 }
 
-.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus {
-    transform: scale(1.1); 
-    color: #4242913f; 
+.mybtn{
+    background-color: #2ec4b6;
+    color: white;
+}
+.mybtn:hover{
+    background-color: #ff9f1c;
+    color: white;
 }
 
-.navbar-nav .nav-link:active {
-    transform: scale(0.95);
+.navbtn{
+    background-color: #ff9f1c;
+    color: black;
+}
+.navbtn:hover{
+    background-color: #ff9f1c;
+    color: black;
 }
 
-.dropdown-menu .dropdown-item {
-    transition: background-color 0.3s ease, transform 0.3s ease;
+nav{
+    background-color: #cbf3f0;
+    padding: 20px 0px !important;
+}
+nav ul li a{
+    padding: 0px 15px !important;
+    font-weight: 500 !important;
+}
+.navbar-brand{
+    font-family: preconnect;
+
 }
 
-.dropdown-menu .dropdown-item:hover, .dropdown-menu .dropdown-item:focus {
-    background-color: #574c4c00;
-    transform: translateX(10px); 
-}
-
-.navbar-brand {
-    font-family: "Dancing Script", cursive;
-    font-weight: bolder;
-    font-size: x-large;
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
+.hero-sec{
     width: 100%;
-    z-index: 9999;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, rgba(0,0,0,0.8), rgba(0,0,0,0.4)), url("https://images.pexels.com/photos/7703038/pexels-photo-7703038.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-size: cover;
 }
 
-.navbar.scrolled {
-    background-color: rgba(0, 0, 0, 0.8); 
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+.collection img{
+    border-radius: 2rem;
 }
 
-body {
-    padding-top: 70px; /* Fix for navbar overlap */
-}
-
-.dropdown-menu-end {
-    right: 0;
-    left: auto;
-}
-
-.carousel-inner {
+.collection .right{
     width: 100%;
-    height: 70vh; 
+    height: 600px;
+    object-fit: cover;
 }
-
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: #000; 
-}
-
-.carousel-caption h5 {
-    font-size: 2.5rem; 
-    font-weight: bold;
-}
-
-.carousel-caption p {
-    font-size: 1.5rem;
-}
-
-.text-primary-emphasis {
-    color: #007bff; 
-    font-weight: bold;
-}
-
-.lead {
-    font-size: 1.2rem;
-    line-height: 1.8;
-}
-
-.container {
-    max-width: 1140px;
-}
-
-@media (max-width: 768px) {
-    .col-lg-6 {
-        margin-bottom: 30px;
-    }
-}
-
-.location-box {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.location-box:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); 
-    transform: scale(1.05); 
-    background-color: #f8f9fa; 
-}
-
-/* Full-screen video background */
-.video-background-container {
-    position: relative;
+.collection .left{
     width: 100%;
-    height: 100vh; /* Full viewport height */
-    overflow: hidden;
-}
-
-.video-background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    z-index: -1; /* Keeps the video behind text */
-}
-
-.video-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white; /* Text color */
-    text-align: center;
-    z-index: 1;
-}
-
-.video-overlay h1 {
-    font-size: 3rem;
-    font-weight: bold;
-}
-
-.video-overlay p {
-    font-size: 1.5rem;
-    font-style: italic;
+    height: 300px;
+    object-fit: cover;
 }
 
 .card-img-top {
